@@ -1,0 +1,112 @@
+.movie-detail{
+  width: 99.7%;
+  height: 700px;
+}
+
+.PosterDetail{
+  margin-top: 8px;
+}
+
+.Letrero{
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  clear: both;
+  width: 100%;
+  height: 500px;
+  margin-top: 80px;
+}
+
+.PosterDetail{
+  width: 30%;
+  height: 100%;
+  float: left;
+  padding: 0 30px;
+}
+
+.PosterDetail img{
+  box-shadow: 0 10px 15px #00000095;
+}
+
+.Info{
+  width: 58%;
+  height: 100%;
+  float: left;
+  text-align: left;
+  color: #fff;
+  padding: 0 30px;
+}
+
+.Nombre{
+  width: 100%;
+  height: 75px;
+  font-size: 34px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.Released, .Icono, .Runtime, .Rated, .Genre{
+  float: left;
+  margin-right: 5px;
+}
+
+.Released, .Language{
+  width: 100px;
+}
+
+.Runtime{
+  width: 80px;
+}
+
+.Rated{
+  width: 50px;
+}
+
+.Genre{
+  width: 300px;
+}
+
+.Icono{
+  width: 22px;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.Letrero2{
+  clear: both;
+  height:50px;
+  line-height: 50px;
+  font-size: 28px;
+  font-weight: 100;
+  color: yellow;
+}
+
+.Plot{
+  font-size: 20px;
+  line-height: 22px;
+  padding-bottom: 10px;
+}
+
+.Regresar{
+  position: absolute;
+  bottom: 25px;
+  right: 35px;
+}
+
+.LinkRegresar{
+  color: yellow;
+  text-decoration: none;
+  padding: 10px;
+  transition: 0.5s all;
+  border-radius: 5px;
+}
+
+.LinkRegresar:hover{
+  color: #fff;
+  border: solid 1px #ffffff20;
+}
+

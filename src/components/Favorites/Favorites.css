@@ -1,0 +1,100 @@
+.cnt {
+    padding-top: 10px;
+}
+
+.ListFavorite{
+    width: 96.5%;
+    height:640px;
+    margin-top: 100px;
+    clear: both;
+    text-align: center;
+    overflow: scroll;
+
+}
+
+.ListFavorite::-webkit-scrollbar-thumb:active {
+    background-color: #fff;
+}
+
+.ListFavorite::-webkit-scrollbar-thumb {
+    background: #00000050;
+    border-radius: 7px;
+}
+
+.ListFavorite::-webkit-scrollbar-thumb:hover {
+    background: black;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+.ListFavorite::-webkit-scrollbar{
+    width: 8px;
+    height: 0;
+}
+
+.ListFavoriteItem{
+    width: 150px;
+    height: 250px;
+    margin-right: 40px;
+    float: left;
+    background-color: #ffffff10;
+    border-radius: 10px;
+    margin-bottom: 40px;  
+    box-shadow: 0 10px 10px #00000060;
+}
+
+.Titulo, .PeliImagen, .Botones{
+    width: 150px;
+    position: relative;
+    right: 17px;
+    top: 10px;
+}
+
+.Titulo{
+    height: 50px;
+}
+
+.TituloLink{
+    height: 50px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s all;
+}
+
+.TituloLink:hover{
+    color: #f00;
+}
+
+.PeliImagen{
+    height: 150px;
+}
+
+.Botones{
+    top: 30px;
+}
+
+.FavBtn{
+    height: 25px;
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px #00000060;
+    border: none;
+    transition: 0.5s all;
+}
+
+.FavBtn + .FavBtn{
+    margin-left: 22px;
+}
+
+.FavBtn:hover{
+  
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.PosterFav{
+    height: 150px;
+    box-shadow: 0 15px 15px #00000080;
+}

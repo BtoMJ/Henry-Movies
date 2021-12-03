@@ -1,0 +1,141 @@
+.Buscador{
+    height: 720px;
+    overflow: scroll;
+}
+
+.Buscador::-webkit-scrollbar-thumb:active {
+    background-color: #fff;
+}
+
+.Buscador::-webkit-scrollbar-thumb {
+    background: #00000050;
+    border-radius: 7px;
+}
+
+.Buscador::-webkit-scrollbar-thumb:hover {
+    background: black;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+.Buscador::-webkit-scrollbar{
+    width: 8px;
+    height: 0;
+}
+
+.cnt {
+    padding-top: 10px;
+}
+.form-container {
+    display:flex;
+    flex-direction: row;
+    align-items: flex-start;
+    color:white;
+    clear: both;
+}
+
+.form-container button {
+    margin-left: 20px;
+}
+.label {
+    padding-right: 10px;
+}
+
+h2{
+    color:white;
+    float: left;
+    font-size: 28px;
+}
+
+.BtnGetMovie, .Fav{
+    border: none;
+    background-color: rgb(255, 255, 0);;
+    color: black;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 1px 5px 8px #00000080;
+    float: left;
+    transition: 0.5s all;     
+}
+
+.BtnGetMovie{
+    height: 25px;
+    width: 80px;
+    line-height: 25px;
+}
+
+.Fav{
+    height: 30px;
+    width: 50px;
+    line-height: 30px;
+}
+
+.BtnGetMovie:hover, .Fav:hover{
+    color: #000;
+    background-color: white;
+    cursor: pointer;
+}
+
+.txtMovie{
+    border: none;
+    height:25px;
+    border-radius: 5px;
+}
+
+
+.movieList{
+    position: relative;
+    top:50px;
+     /* display:flex;
+    flex-direction: column; */
+    /* justify-content:flex-start; */
+}
+
+ul li{
+    width: 500px;
+    height: 80px;
+    padding-bottom: 25px;
+    padding-left: 30px;
+    list-style: none;
+    float: left;
+    /* border: thin dotted #f00; */
+}
+
+.Link{
+    text-decoration: none;
+    color: #fff;
+    transition: 0.5s all;
+    float: left;
+}
+
+.Link:hover{
+    color:#f00;
+}
+
+.ImagenPeli{
+    width: 50px;
+    float: left;
+}
+
+.Poster{
+    height: 80px;
+    width: 50px;
+    overflow: hidden;
+}
+
+.Peli{
+    width: 370px;
+    float: left;
+    font-size: 17px;
+    line-height: 90px;
+    padding-left: 10px;
+    /* border: thin dotted #0f0; */
+}
+
+.Btn{
+    width: 50px;
+    position: relative;
+    top: 20px;
+    float: left;
+    /* border: thin dotted #00f; */
+}
+
