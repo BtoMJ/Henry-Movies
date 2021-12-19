@@ -22,9 +22,6 @@
     height: 0;
 }
 
-.cnt {
-    padding-top: 10px;
-}
 .form-container {
     display:flex;
     flex-direction: row;
@@ -36,6 +33,7 @@
 .form-container button {
     margin-left: 20px;
 }
+
 .label {
     padding-right: 10px;
 }
@@ -136,6 +134,18 @@ ul li{
     position: relative;
     top: 20px;
     float: left;
-    /* border: thin dotted #00f; */
 }
 
+
+@media (min-width: 1200px) and (max-width: 1399px){
+    
+    .movieList{
+        width: 95%;
+        height: 400px;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        overflow-y: scroll;
+        /* border: thin dotted #00f; */
+    }
+}

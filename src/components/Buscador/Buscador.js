@@ -3,9 +3,6 @@ import { connect } from "react-redux";
 import { NavLink } from 'react-router-dom';
 import { addMovieFavorite, getMovies } from "../../actions";
 import './Buscador.css';
-
-
-
 export class Buscador extends Component {
   constructor(props) {
     super(props);
@@ -41,9 +38,19 @@ export class Buscador extends Component {
           {
             this.props.movies && this.props.movies.map((movie) =>(
               <li key={movie.imdbID}>
-                <div className="ImagenPeli"><img className="Poster" src={movie.Poster} alt={movie.Title}></img></div>
-                <div className="Peli"><NavLink className="Link" to={`/movie/${movie.imdbID}`}>{movie.Title}</NavLink></div>
-                <div className="Btn"><button className="Fav" onClick={() =>this.props.addMovieFavorite({title: movie.Title, id: movie.imdbID, img: movie.Poster})}>FAV</button></div>
+                <div className="ImagenPeli">
+                  <img className="Poster" src={movie.Poster} alt={movie.Title} />
+                </div>
+                <div className="Peli">
+                  <NavLink className="Link" to={`/movie/${movie.imdbID}`}>{movie.Title}</NavLink>
+                </div>
+                <div className="Btn">
+                  <button
+                    className="Fav" 
+                    onClick={() =>this.props.addMovieFavorite({title: movie.Title, id: movie.imdbID, img: movie.Poster})}>
+                    FAV
+                  </button>
+                </div>
               </li>
             ))
           }
