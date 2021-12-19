@@ -13,10 +13,16 @@ class Movie extends React.Component {
     render() {
         return (
             <div className="movie-detail">
-                <div className="Letrero"><h2>Detalle de la pelicula </h2></div>
+                <div className="Letrero">
+                    <h2>Detalles de la película</h2>
+                </div>
                 <div className="container">
                     <div className="PosterDetail">
-                        <div><img src={this.props.movieDetail.Poster} alt={this.props.Title}/></div>
+                        <div>
+                            <img 
+                                src={this.props.movieDetail.Poster} 
+                                alt={this.props.Title}/>
+                        </div>
                     </div>
                     <div className="Info">
                         <div className="Nombre">{this.props.movieDetail.Title}</div>

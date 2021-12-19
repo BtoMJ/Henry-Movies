@@ -8,11 +8,6 @@ body {
   background-color: #000;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
 .Container{
   width: 60%;
   height: 86vh;
@@ -27,7 +22,6 @@ code {
 
 .App{
   text-align: center;
-  /* background-color: blue; */
   width: 100%;
   background-color: #000;
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('./wallpaper.jpg');

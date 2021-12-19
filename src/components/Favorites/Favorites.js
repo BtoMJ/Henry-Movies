@@ -10,23 +10,33 @@ export class ConnectedList extends Component {
     return (
       <div>
         <h2>Películas Favoritas</h2>
-        <ul className="ListFavorite">
+        <div className="ListFavorite">
           {
             (this.props.moviesFavourites.map((movie)=>(
 
-              <li key={movie.id} className="ListFavoriteItem">
+              <div key={movie.id} className="ListFavoriteItem">
                 <div className="Titulo">
-                  <NavLink className="TituloLink" to={`/movie/${movie.id}`} title="da click para ver los detalles">{movie.title}</NavLink>
+                  <NavLink 
+                    className="TituloLink" 
+                    to={`/movie/${movie.id}`} 
+                    title="da click para ver los detalles">
+                    {movie.title}
+                  </NavLink>
                 </div>
-                <div className="PeliImagen"><img className="PosterFav"  src={movie.img} alt={movie.title} /></div>
+                <div className="PeliImagen">
+                  <img className="PosterFav"  src={movie.img} alt={movie.title} />
+                </div>
                 <div className="Botones">
-                  <button className="FavBtn" onClick={() =>this.props.removeMovieFavorite(movie.id)}>Eliminar</button>
-                  {/* <button className="FavBtn" onClick={() => this.props.getMovieDetail(movie.id)}>Detalles</button> */}
+                  <button 
+                    className="FavBtn" 
+                    onClick={() =>this.props.removeMovieFavorite(movie.id)}
+                    >Eliminar
+                  </button>
                 </div>
-              </li>
+              </div>
             )))
           }
-        </ul>
+        </div>
       </div>
     );
   }
